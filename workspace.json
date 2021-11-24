@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "futpro-app": "apps/futpro-app",
+    "futpro-app-e2e": "apps/futpro-app-e2e"
+  }
+}
