@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {CardTypes} from '@futpro/types'
 
 /* eslint-disable-next-line */
 export interface CardProps {}
@@ -38,12 +39,8 @@ const TextCard = styled.text`
   color: #FFFFFF;
 `;
 
-type Approps ={
-  link : string;
-  text : string;
-};
 
-export function Card({link, text}: Approps) {
+export function Card({link, text}: CardTypes) {
   return (
     <StyledCard>
       <WrapImageCard>

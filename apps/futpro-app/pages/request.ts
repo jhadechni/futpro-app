@@ -3,7 +3,7 @@ import axios from '../Instance';
 const API = process.env.NX_API_LINK;
 console.log(API);
 
-export const listAllCountries = async () => {
+ const listAllCountries = async () => {
   try {
     const req = await axios.get(
       `${API}/countries`
@@ -24,3 +24,5 @@ export const listAllCountries = async () => {
     console.error(error);
   }
 };
+
+export default listAllCountries;
