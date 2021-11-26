@@ -44,7 +44,7 @@ export function Card(props: CardProps) {
       <WrapImageCard>
         <FlagIcon src="https://media.api-football.com/flags/ar.svg" />
       </WrapImageCard>
-      <TextCard>Nombre</TextCard>
+      <TextCard>Carta</TextCard>
     </StyledCard>
   );
 }
