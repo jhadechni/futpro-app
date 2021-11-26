@@ -4,7 +4,7 @@ import { listAllCountries } from '../request';
 import { Card } from '@futpro/ui';
 import cuid from 'cuid';
 
-const StyledCountry = styled.div`
+const StyledClubs = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `;
@@ -13,7 +13,7 @@ const TitleCardContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 2%;
-`; 
+`;
 
 const CardContainer = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const CardContainer = styled.div`
   justify-content: center;
 `
 
-export function Country() {
+export function Club() {
 
   const [countriesData, setCountriesData] = useState<any>([]);
   useEffect(() => {
@@ -33,13 +33,14 @@ export function Country() {
   }, []);
 
   return (
-    <StyledCountry>
+    <StyledClubs>
       <TitleCardContainer>
-        {/* Card del pais  */}
+        {/* Card del club */}
       </TitleCardContainer>
       <CardContainer>
         {countriesData.map((countrie) => {
           return (
+            
             <Card
               key={cuid()}
               text={countrie.name}
@@ -48,8 +49,8 @@ export function Country() {
           );
         })}
       </CardContainer>
-    </StyledCountry>
+    </StyledClubs>
   );
 }
 
-export default Country;
+export default Club;

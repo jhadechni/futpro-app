@@ -22,8 +22,8 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <div className="app">
         <div className="container">
           <div className="box">
-            <Nav />
-          </div>
+           <Nav/>          
+           </div>
           <div className="boxcontent">
             <Countries />
           </div>

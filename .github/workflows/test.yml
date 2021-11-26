@@ -1,0 +1,14 @@
+name: tests
+on: [push]
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: yarn global add bats
+      - run: yarn add global react-scripts
+      - run: bats -v
+      - run: yarn test
