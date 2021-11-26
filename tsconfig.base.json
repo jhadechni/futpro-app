@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@futpro/types": ["libs/types/src/index.ts"],
       "@futpro/ui": ["libs/ui/src/index.ts"]
     }
   },

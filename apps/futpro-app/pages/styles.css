@@ -1,8 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1C5F33;
+} 
+
 .app {
-  font-family: sans-serif;
-  min-width: 300px;
-  max-width: 600px;
-  margin: 50px auto;
+  font-family: 'Outfit', sans-serif;
+  /*padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;*/
+  display: flex;
+  justify-content: center;
+}
+
+.app .container {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  height: 100%;
+  @media (max_device: 1200px) {
+    flex-direction: column;
+  }
+}
+
+.app .box {
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  border-width: 1px 1px 1px 0;
+  background-color: #2F9B54;
+  @media (max_device: 1200px) {
+    display: none;
+  }
+}
+
+.app .boxcontent {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.app .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+  justify-content: center;
 }
 
 .app .gutter-left {

@@ -1,25 +1,37 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import './styles.css';
-import {Button as Bttn} from '@futpro/ui';
+import {Header as Hdr, Footer as Ftr, Card, Nav} from '@futpro/ui';
+
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <title>Welcome to futpro-app!</title>
-      </Head>
+      <Hdr/>
       <div className="app">
-        <header className="flex">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/nx-logo-white.svg" alt="Nx logo" width="75" height="50" />
-          <h1>Welcome to futpro-app!</h1>
-        </header>
-        <main>
-          <Component {...pageProps} />
-        </main>
-        <Bttn>Nojoda cule filo</Bttn> 
+        <div className="container">
+          <div className="box">
+            <Nav />
+          </div>
+          <div className="boxcontent">
+            <div className="card-container">
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+              <Card/>
+            </div>
+          </div>
+        </div>
       </div>
+      <Ftr/>
     </>
   );
 }
