@@ -5,7 +5,6 @@ export interface CardProps {}
 
 const StyledCard = styled.div`
   cursor: pointer;
-  background-color: #1C5F33;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,13 +12,14 @@ const StyledCard = styled.div`
   transition: all 0.2s ease-in-out;
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #00000034;
+    background: #0000006c;
   }
   padding: 1%;
 `;
 
 const WrapImageCard = styled.div`
   border-radius: 24px;
+  
 `;
 
 const FlagIcon = styled.img`
@@ -27,7 +27,7 @@ const FlagIcon = styled.img`
   display: block;
   object-fit: cover;
   transition: all 0.2s linear;
-  max-width: 350px;
+  max-width: 200px;
 `;
 
 const TextCard = styled.text`
@@ -38,13 +38,18 @@ const TextCard = styled.text`
   color: #FFFFFF;
 `;
 
-export function Card(props: CardProps) {
+type Approps ={
+  link : string;
+  text : string;
+};
+
+export function Card({link, text}: Approps) {
   return (
     <StyledCard>
       <WrapImageCard>
-        <FlagIcon src="https://media.api-football.com/flags/ar.svg" />
+        <FlagIcon src= {link} />
       </WrapImageCard>
-      <TextCard>Carta</TextCard>
+      <TextCard>{text}</TextCard>
     </StyledCard>
   );
 }
