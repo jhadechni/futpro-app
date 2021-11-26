@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
-import { listAllCountries } from '../request';
+import listAllCountries from '../request';
 import { Card } from '@futpro/ui';
 import cuid from 'cuid';
 
