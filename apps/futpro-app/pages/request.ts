@@ -1,9 +1,11 @@
-import axios from '../Axios';
+import axios from '../Instance';
 
-export const getCountries = async () => {
+const API = process.env.NX_API_LINK;
+console.log(API);
+export const listAllCountries = async () => {
   try {
     const req = await axios.get(
-      `https://api-football-v1.p.rapidapi.com/v2/countries`
+      `${API}/countries`
     );
     const countries = [];
     let sw = 0;

@@ -4,24 +4,16 @@ import { listAllCountries } from '../request';
 import { Card } from '@futpro/ui';
 import cuid from 'cuid';
 
-const StyledCountries = styled.div`
+const StyledCountry = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `;
 
-const TitleContainer = styled.div`
+const TitleCardContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 2%;
 `; 
-
-const TitleText = styled.text`
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 64px;
-  color: white;
-`;
 
 const CardContainer = styled.div`
   display: flex;
@@ -41,10 +33,10 @@ export function Countries() {
   }, []);
 
   return (
-    <StyledCountries>
-      <TitleContainer>
-        <TitleText>Países</TitleText>
-      </TitleContainer>
+    <StyledCountry>
+      <TitleCardContainer>
+        {/* Card del pais  */}
+      </TitleCardContainer>
       <CardContainer>
         {countriesData.map((countrie) => {
           return (
@@ -56,7 +48,7 @@ export function Countries() {
           );
         })}
       </CardContainer>
-    </StyledCountries>
+    </StyledCountry>
   );
 }
 
