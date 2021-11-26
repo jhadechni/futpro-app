@@ -9,6 +9,20 @@ const StyledCountries = styled.div`
   margin: 0 auto;
 `;
 
+const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+`; 
+
+const TitleText = styled.text`
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  color: white;
+`;
+
 const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +42,9 @@ export function Countries() {
 
   return (
     <StyledCountries>
-      <h1>Países</h1>
+      <TitleContainer>
+        <TitleText>Países</TitleText>
+      </TitleContainer>
       <CardContainer>
         {countriesData.map((item) => {
           return (
