@@ -18,8 +18,8 @@ const StyledCard = styled.div`
 `;
 
 const WrapImageCard = styled.div`
-  border-radius: 24px;
-  
+  border-radius: 28px;
+  border: 3px solid rgba(0, 0, 0, 1);
 `;
 
 const FlagIcon = styled.img`
