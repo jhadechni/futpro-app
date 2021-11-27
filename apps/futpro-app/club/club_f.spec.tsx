@@ -1,12 +1,9 @@
 import { render } from '@testing-library/react';
+import Club_f from './club_f';
 
-import Ui from './ui';
-
-export const suitUi =( ) =>{
-describe.only('Ui', () => {
+describe('Club_f', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Ui />);
+    const { baseElement } = render(<Club_f />);
     expect(baseElement).toBeTruthy();
   });
 });
-}

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {CardTypes} from '@futpro/types'
-
+import Link from 'next/link';
 /* eslint-disable-next-line */
 export interface CardProps {}
 
@@ -40,14 +40,16 @@ const TextCard = styled.text`
 `;
 
 
-export function Card({imagelink, text}: CardTypes) {
+export function Card({imagelink, text, route, id}: CardTypes) {
   return (
+    <Link href={{ pathname: `${route}`, query: { id: id } }}>
     <StyledCard>
       <WrapImageCard>
         <FlagIcon src= {imagelink} />
       </WrapImageCard>
       <TextCard>{text}</TextCard>
     </StyledCard>
+    </Link>
   );
 }
 

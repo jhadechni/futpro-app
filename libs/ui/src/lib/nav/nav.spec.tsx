@@ -1,10 +1,18 @@
+import 'jest-styled-components'
+import Nav from './nav';
 import { render } from '@testing-library/react';
 
-import Nav from './nav';
+export const suitNav =( ) =>{
 
-describe('Nav', () => {
-  it('should render successfully', () => {
-    const { baseElement } = render(<Nav />);
-    expect(baseElement).toBeTruthy();
+  describe.only('Nav', () => {
+    it('should render successfully', () => {
+      const { baseElement } = render(<Nav />);
+      expect(baseElement).toBeTruthy();
+    });
+
+    
+
+   
   });
-});
+}
+

@@ -1,12 +1,11 @@
+
 import { render } from '@testing-library/react';
 
-import Ui from './ui';
+import Countryf from './country_f';
 
-export const suitUi =( ) =>{
-describe.only('Ui', () => {
+describe('Country', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Ui />);
+    const { baseElement } = render(<Countryf />);
     expect(baseElement).toBeTruthy();
   });
 });
-}

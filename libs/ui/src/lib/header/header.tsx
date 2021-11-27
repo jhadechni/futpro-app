@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from 'next/link';
 
 /* eslint-disable-next-line */
 export interface HeaderProps {}
@@ -17,10 +18,15 @@ const StyledHeader = styled.header`
   background-color: #2F9B54;
   box-shadow: 0px 30px 17px rgba(0, 0, 0, 0.25);
   border-bottom-right-radius: 24px;
-  //border-bottom-left-radius: 24px;
+  border-bottom-left-radius: 24px;
   padding-top: 1%;
   padding-bottom: 1%;
   z-index: 2;
+`;
+
+const LinkContainer = styled.div`
+  cursor: pointer;
+  text-decoration: none;
 `;
 
 const TextHeader = styled.text`
@@ -34,7 +40,11 @@ const TextHeader = styled.text`
 export function Header(props: HeaderProps) {
   return (
     <StyledHeader>
-      <TextHeader>Football Pro</TextHeader>
+      <Link href={{ pathname: `/`}}>
+        <LinkContainer>
+          <TextHeader>Football Pro</TextHeader>
+        </LinkContainer>
+      </Link>
     </StyledHeader>
   );
 }
