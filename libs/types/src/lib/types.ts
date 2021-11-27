@@ -3,6 +3,7 @@ export function types(): string {
 }
 
 export interface CardTypes {
-  link : string;
+  imagelink : string;
   text : string;
+  id: string;
 };

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 /* eslint-disable-next-line */
 export interface HeaderProps {}
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   //margin-top: -14px;
   //position: absolute;
   //left: 0%;

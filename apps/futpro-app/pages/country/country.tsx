@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
-import listAllCountries from '../request';
+import {listAllCountries} from '../request';
 import { Card } from '@futpro/ui';
 import cuid from 'cuid';
 
@@ -43,7 +43,8 @@ export function Country() {
             <Card
               key={cuid()}
               text={countrie.name}
-              link={countrie.img}
+              imagelink={countrie.img}
+              id={countrie.id}
             />
           );
         })}

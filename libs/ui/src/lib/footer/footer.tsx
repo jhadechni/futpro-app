@@ -3,7 +3,7 @@ import styled from 'styled-components';
 /* eslint-disable-next-line */
 export interface FooterProps {}
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   //margin-top: -14px;
   //position: absolute;
   //left: 0%;

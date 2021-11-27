@@ -18,18 +18,7 @@ const Card_list = styled.ul`
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Hdr/>
-      <div className="app">
-        <div className="container">
-          <div className="box">
-           <Nav/>          
-           </div>
-          <div className="boxcontent">
-            <Countries />
-          </div>
-        </div>
-      </div>
-      <Ftr/>
+      <Countries /> 
     </>
   );
 }

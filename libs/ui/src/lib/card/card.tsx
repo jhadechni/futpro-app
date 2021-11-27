@@ -40,11 +40,11 @@ const TextCard = styled.text`
 `;
 
 
-export function Card({link, text}: CardTypes) {
+export function Card({imagelink, text}: CardTypes) {
   return (
     <StyledCard>
       <WrapImageCard>
-        <FlagIcon src= {link} />
+        <FlagIcon src= {imagelink} />
       </WrapImageCard>
       <TextCard>{text}</TextCard>
     </StyledCard>
