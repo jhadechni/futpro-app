@@ -1,4 +1,4 @@
-import axios from '../../Instance';
+import axios from '../Instance';
 
 const ListAllTeams = async (countrie : string) => {
     try {
