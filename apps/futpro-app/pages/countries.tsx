@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
-import {listAllCountries} from './request';
+import listAllCountries from './requests/listAllCountries';
 import cuid from 'cuid';
 import {Header as Hdr, Footer as Ftr, Card, Nav} from '@futpro/ui';
 

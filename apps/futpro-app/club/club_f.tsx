@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
-import { listAllPlayers, listAllTeams } from '../pages/request';
+import listAllPlayers from '../pages/requests/listAllPlayers';
 import { Card } from '@futpro/ui';
 import cuid from 'cuid';
 
