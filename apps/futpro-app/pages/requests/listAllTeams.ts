@@ -1,6 +1,6 @@
 import axios from '../../Instance';
 
-const listAllTeams = async (countrie : string) => {
+const ListAllTeams = async (countrie : string) => {
     try {
       const req = await axios.get(
         `https://api-football-v1.p.rapidapi.com/v2/teams/search/${countrie}`
@@ -23,4 +23,4 @@ const listAllTeams = async (countrie : string) => {
     }
   };
 
-  export default listAllTeams;
+  export default ListAllTeams;

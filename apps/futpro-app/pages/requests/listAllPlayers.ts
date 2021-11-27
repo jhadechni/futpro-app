@@ -1,7 +1,7 @@
 import axios from '../../Instance';
 
 
-const listAllPlayers = async (team: string) => {
+const ListAllPlayers = async (team: string) => {
     try {
       const req = await axios.get(
         `https://api-football-v1.p.rapidapi.com/v2/players/squad/${team}/2020`
@@ -23,4 +23,4 @@ const listAllPlayers = async (team: string) => {
     }
   };
 
-  export default listAllPlayers;
+  export default ListAllPlayers;
