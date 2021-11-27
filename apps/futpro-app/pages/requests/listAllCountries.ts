@@ -1,11 +1,10 @@
 import axios from '../../Instance';
 
-const API = process.env.NX_API_LINK;
 
  const listAllCountries = async () => {
   try {
     const req = await axios.get(
-      `${API}/countries`
+      `https://api-football-v1.p.rapidapi.com/v2/countries`
     );
     const countries = [];
     let sw = 0;
