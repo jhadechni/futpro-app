@@ -46,8 +46,6 @@ export function Club_f(team: any) {
         </TitleContainer>
         <CardContainer>
           {clubData.map((player) => {
-
-            if (clubData != null) {
               return (
                 <Card
                 key={cuid()}
@@ -57,12 +55,6 @@ export function Club_f(team: any) {
                 route = {''}
               />
               );
-            }else{
-             return(
-              <h1>No se encontraron jugadores</h1>
-             ); 
-            }
-            
           })}
         </CardContainer>
       </StyledCountries>

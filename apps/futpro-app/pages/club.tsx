@@ -12,6 +12,7 @@ const TitleCardContainer = styled.div`
   padding: 2%;
 `;
 const CardContainer = styled.div`
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1;

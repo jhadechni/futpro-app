@@ -12,6 +12,7 @@ const TitleCardContainer = styled.div`
   padding: 2%;
 `; 
 const CardContainer = styled.div`
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1;
@@ -28,11 +29,8 @@ export function Country() {
         <TitleCardContainer>
           {/* Card del pais  */}
         </TitleCardContainer>
-        <CardContainer>
-            return (
-              <Countryf country={id}/>
-            );
-          )
+        <CardContainer> 
+          <Countryf country={id}/>
         </CardContainer>
       </StyledCountry>
     </>

@@ -34,7 +34,6 @@ export function Country_f(country: any) {
   useEffect(() => {
     (async () => {
       const products = await listAllTeams(country.country);
-      console.log(products);
       setTeamsData(products);
     })();
   }, []);

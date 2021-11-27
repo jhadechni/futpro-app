@@ -21,6 +21,7 @@ const TitleText = styled.text`
   color: white;
 `;
 const CardContainer = styled.div`
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   flex: 1 1;

@@ -16,12 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@futpro/types": ["libs/types/src/index.ts"],
-      "@futpro/ui": ["libs/ui/src/index.ts"],
-      "@futpro/card":["libs/ui/src/lib/card/card.spec.tsx"],
-      "@futpro/header":["libs/ui/src/lib/header/header.spec.tsx"],
-      "@futpro/nav":["libs/ui/src/lib/nav/nav.spec.tsx"],
-      "@futpro/footer":["libs/ui/src/lib/footer/footer.spec.tsx"],
-      "@futpro/ui2":["libs/ui/src/lib/ui.spec.tsx"]
+      "@futpro/ui": ["libs/ui/src/index.ts"]
+      
     }
   },
   "exclude": ["node_modules", "tmp"]

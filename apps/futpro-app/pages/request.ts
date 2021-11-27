@@ -40,7 +40,7 @@ export const listAllTeams = async (countrie : string) => {
       teams.push(json);
       sw += 1;
     }
-    console.log(teams);
+    
     return teams;
   } catch (error) {
     console.error(error);
